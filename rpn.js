@@ -8,6 +8,10 @@ for (let i = 2; i < args.length; i++) {
         var val1 = stack.pop();
         var val2 = stack.pop();
         stack.push(val1 + val2);
+    } else if (arg === "-") {
+        var val1 = stack.pop();
+        var val2 = stack.pop();
+        stack.push(val1 - val2);
     } else {
         stack.push(parseFloat(arg));
     }
